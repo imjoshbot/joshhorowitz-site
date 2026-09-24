@@ -207,8 +207,13 @@ a.more:hover{color:var(--bone)}
 .fw-body p{margin:0;color:#cfc8da;max-width:40ch}
 
 /* logos */
-.venture .logo{width:auto;height:64px;max-width:100%;object-fit:contain;opacity:.92}
+.venture .logo{width:auto;height:64px;max-width:100%;object-fit:contain;opacity:.92;align-self:flex-start}
+.venture .logos{align-self:flex-start}
+.venture .logos .logo{align-self:center}
+.venture > span.mono.smoke:first-of-type{margin-top:0}
 .venture .logo.wide{height:64px;opacity:1}
+.venture .logos{display:flex;align-items:center;gap:22px}
+.venture .logos .logo + .logo{height:38px;padding-left:22px;border-left:1px solid var(--hair-strong);box-sizing:content-box}
 
 /* press feature */
 .press-feature{display:grid;grid-template-columns:minmax(200px,350px) 1fr;gap:clamp(20px,3vw,40px);align-items:center;margin-bottom:40px}
@@ -581,7 +586,7 @@ a.more:hover{color:var(--bone)}
         <span class="mono smoke"><a href="https://www.hksinc.com/project-why/" target="_blank" rel="noopener">hksinc.com/project-why ↗</a></span>
       </article>
       <article class="venture">
-        <img class="logo" src="assets/logo-pif.png" alt="Public Investment Fund seal" width="400" height="400">
+        <div class="logos"><img class="logo" src="assets/logo-pif.png" alt="Public Investment Fund seal" width="400" height="400"><img class="logo" src="assets/logo-qsas.png" alt="QSAS" width="595" height="182"></div>
         <span class="mono smoke">Advisory</span>
         <h3>Future <i>Museums</i></h3>
         <p>Special Consultant to the Public Investment Fund of Saudi Arabia under QSAS, building innovation labs and product ramps for the next generation of immersive cultural space.</p>
